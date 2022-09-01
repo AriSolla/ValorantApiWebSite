@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/navBar.css">
+  <link rel="stylesheet" href="css/buttonToTop.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="index.html">Valorant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/agents.html">Agents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/maps.html">Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/arsenal.html">Arsenal</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mt-4 mb-4 text-black">Welcome to Info-Valorant</h1>
+        <p class="m-0 text-black"><strong>Here you can see all the information about Valorant, the FPS game created by Riot Games, the same company that developed and published "League of Legends". <br>
+          This page uses the official Riot Games API that provides the developer's own information and data about Valorant </strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-10 mx-auto d-block mt-5">
+        <figure class="fig">
+          <img class="imagen img-fluid" src="img/fondo2.jpg" alt="">
+        </figure>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-7 mx-auto mt-3 ">
+        <p class="m-0 text-black">Valorant is a tactical first-person shooter game. This is a precise, competitive FPS, set on a beautiful near-future Earth, in which unique character abilities of a lethal cast of characters create opportunities for your gunplay to shine.</p>
+      </div>
+    </div>
+   
+      <div class="row">
+        <div class="col-12 mt-5 d-flex justify-content-center align-content-center">
+          <a class="btn btn--light" href="html/agents.html">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Check them out!</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    <div>
+      <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+      </button>
+    </div>
+  </div>
+  <hr color="black">
+  <footer class="bg-dark text-center text-white mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <section class="col-12">
+          <p class="footer m-0">| This website is not affiliated with Riot Games |</p>
+          <p class="footer m-0">| <a href="https://www.playvalorant.com">Valorant</a> official website |</p>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js "></script>
+  <script src="js/buttonToTop.js"></script>
+</body>
+</html>

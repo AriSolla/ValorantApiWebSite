@@ -1,0 +1,356 @@
+/*------------------------AGENTS SELECTION------------------*/
+.imagen{
+	margin-top: 40px;
+    border-radius: 9999px;
+}
+h2{
+	text-shadow: 2px 2px rgb(228 105 105);
+}
+.title-pag hr{
+    color: rgb(228 105 105);
+    width: 70vw;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    margin-top: 0;
+    height: 2px;
+    background-color: rgb(228 105 105);
+  }
+  h1{
+    margin: 0px 30px 0px 0px;
+    text-shadow: 2px 2px rgb(228 105 105);
+    margin-left: 4%;
+    
+    font-size: 4rem;
+  }
+
+.hidden{
+	display: none;
+}
+.agent{
+    display: inline-flex;
+    align-items: center;
+    border: solid 3px rgb(255, 124, 124);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    cursor: pointer;
+	width: 100%;
+}
+.agent.active,
+.agent:hover{
+    background-color: rgb(255 69 69);
+    border: solid 3px rgb(1, 0, 0);
+}
+.agent.active div p,
+.agent:hover div p{
+    color: black;
+}
+
+.agent img{
+    max-width: 22%;
+}
+
+.agent-name{
+    margin: 0 10px 0 10px;
+}
+
+.agent-name p{
+    font-family: 'Changa', sans-serif;
+    color: rgb(255, 124, 124);
+    margin: 0px;
+    font-size: calc(14.5px + 0.390625vw);   
+    text-shadow: 1px 1px #000000;
+}
+
+@media (min-width: 991px){
+    .smartphone{
+        display: none;
+    }
+}
+/*------------------------------------------------------------------------*/
+/*---------------------AGENT SELECTION DROPDOWN-------------------------*/
+@media (max-width: 991px){
+   .desktop{
+    display: none;
+   }
+
+ *{
+	box-sizing: border-box;
+ }
+
+ a{
+	text-decoration: none;
+ }
+ p{
+	margin: 0px;
+	padding: 0;
+ }
+
+ .form-container{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 30px 0;
+ }
+ .select-box{
+	width: 50%;
+	margin: auto;
+	position: relative;
+ }
+
+ .select{
+	background: #ffdea1;
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
+	transition: .2s ease all;
+	margin-bottom: 30px;
+	padding: 20px;
+	position: relative;
+	z-index: 200;
+	border: 2px solid rgb(228, 105, 105);
+ }
+ 
+ .select.active,
+ .select:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+	border: 2px solid red;
+ }
+
+ .select.active:before{
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 10px solid red;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	position: absolute;
+	bottom: -22px;
+	left: calc(50% - 15px);
+ }
+
+ .select i{
+	font-size: 30px;
+	margin-left: 30px;
+	color: rgb(228, 105, 105);
+ }
+ .select.active i,
+ .select:hover i{
+	font-size: 30px;
+	margin-left: 30px;
+	color: red
+ }
+
+ .agent-title{
+	color:rgb(250, 98, 98);
+    text-shadow: 1px 1px #000000;
+	font-size: calc(16.5px + 0.390625vw);   
+	font-weight: 600;
+ }
+
+ .options{
+	background: #ffdea1;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+	max-height: 400px;
+	overflow: auto;
+	z-index: 100;
+	width: 100%;
+	display: none;
+ }
+
+ .options.active{
+	display: block;
+	animation: fadeIn .3s forwards;
+ }
+@keyframes fadeIn {
+	from{
+		transform: translateY(-160px) scale(.5);
+	}
+	to{
+		transform: translateY(0px) scale(1);
+	}
+}
+
+ .option-content{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transition: .2s ease all;	
+ }
+ .options .option-content{
+	border-bottom: 2px solid rgb(228, 105, 105); 
+	padding: 10px;
+ } 
+
+ .option-content img{
+	width: 60px;
+	height: 60px;
+	margin-right: 30px;
+ }
+
+ .options .option-content:hover{
+	background: rgb(255, 124, 124);
+ }
+ .options .option-content:hover .agent-title{
+	color: black;
+ }
+	
+	
+}
+/*PANTALLA MOBILE CHICA*/
+@media(max-width: 426px){
+	.title-pag hr{
+		color: rgb(228 105 105);
+		width: 70vw;
+		margin-left: 4%;
+		margin-bottom: 4%;
+		margin-top: 0;
+		height: 2px;
+		background-color: rgb(228 105 105);
+	  }
+	  h1{
+		margin: 0px 30px 0px 0px;
+		text-shadow: 2px 2px rgb(228 105 105);
+		margin-left: 4%;
+		
+		font-size: 2rem;
+	  }
+	.select-box{
+		width: 80%;
+		margin: auto;
+		position: relative;
+	 }
+	 .option-content img{
+		width: 45px;
+		height: 45px;
+		margin-right: 20px;
+	 }
+}
+footer{
+	bottom: 0;
+	width: 100%;
+}
+
+/*----------------------------------------------*/
+/*-------------AGENT BIOGRAPHY----------------*/
+
+.agent-img{
+	width: 100%;
+}
+.agent-img-name{
+	text-shadow: 2px 2px rgb(228, 105, 105); 
+}
+
+.agent-role div{
+	display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.agent-role div h2,
+.biography h2{
+	margin: 0px 30px 0px 0px;
+	text-shadow: 2px 2px rgb(228, 105, 105); 
+	
+}
+.agent-role div img{
+	width: 40px;
+}
+
+.agent-img-role.active{
+	background: linear-gradient(180deg, rgba(255,222,161,1) 30%, rgba(255,235,198,1) 100%);
+}
+
+/*----------------------------------------------*/
+
+/*--------------ABILITIES---------------*/
+.abilities{
+	width: 100%;
+    padding: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.abilities.active{
+	background: linear-gradient(180deg, rgba(0,0,0,0.26813735748205536) 0%, rgba(255,235,198,1) 51%);
+}
+.abilities-title{
+	text-shadow: 2px 2px rgb(228, 105, 105); 
+}
+.abilitie{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	
+}
+.abilitie img{
+	width: 7vw;
+}
+.abilitie h5{
+	text-shadow: 1px 1px rgb(228, 105, 105); 
+}
+.abilitie p{
+	text-align: center;
+	
+}
+
+@media(max-width: 769px){
+	.abilities{
+		width: 100%;
+		padding: 30px;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.abilities.active{
+		background: linear-gradient(180deg, rgba(0,0,0,0.26813735748205536) 0%, rgba(255,235,198,1) 100%);
+	}
+
+	.abilitie{
+		margin-bottom: 30px;
+	}
+	.abilitie img{
+		width: 13vw;
+	}
+	.abilitie h5{
+		text-align: center;
+	}
+}
+
+.hr{
+	display: none;
+}
+.hr.active{
+	display: inherit;
+}
+
+
+@media(min-width: 1920px){
+	.container{
+		max-width: 95%;
+	}
+	p{
+		font-size: 1.4rem;
+	}
+	
+	h2{
+		font-size: 4rem;
+	}
+	h1{
+		font-size: 6rem;
+	}
+	h5{
+		font-size: 2rem;
+	}
+}
