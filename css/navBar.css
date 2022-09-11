@@ -2,6 +2,9 @@
 body{
 	font-family: 'Changa', sans-serif;
  }
+nav{
+  z-index: 2;
+}
 .nav-item{
     margin-right: 0.6rem
 }
